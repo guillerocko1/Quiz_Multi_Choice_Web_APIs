@@ -53,10 +53,10 @@ var navigation = document.querySelector(".navigation");
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
 
-var sec = 15;
+var sec = 15;//How many seconds for timer function
 var time = setInterval(myTimer, 1000);
 
-
+//Start button - click even
 startbutton.addEventListener("click", function () {
    window.location.reload(true)
    sec = 15;
@@ -67,8 +67,6 @@ startbutton.addEventListener("click", function () {
 })
 
 //Defining timer function
-
-
 function myTimer() {
    startbutton.disabled = true;
    startbutton.textContent = sec + " Sec left";
@@ -98,9 +96,9 @@ function iterate(id) {
    
    
    // Setting the question text
-   
+   //Getting the question from the array
    cardSection.children[0].innerText =  Questions[id].q;
-   
+   //Making the reference for the buttons (answers)
    const answer1 = document.getElementById('answer1');
    const answer2 = document.getElementById('answer2');
    const answer3 = document.getElementById('answer3');
@@ -122,7 +120,7 @@ function iterate(id) {
       "A3" + answer3.value +
       "A4" + answer4.value);
    
-  
+  //First answer button 
    answer1.addEventListener("click", function () {
       answer1.style.backgroundColor = "lightskyblue";
       answer2.style.backgroundColor = "#067eaa";
@@ -133,7 +131,7 @@ function iterate(id) {
       selected = answer1.value; 
 })
    
-   
+   //Second answer button 
    answer2.addEventListener("click", function(){  
       
       answer1.style.backgroundColor = "#067eaa";
@@ -143,7 +141,7 @@ function iterate(id) {
 
       selected = answer2.value;
 })
-   
+   //Third answer button 
    answer3.addEventListener("click", function () { 
       answer1.style.backgroundColor = "#067eaa";
       answer2.style.backgroundColor = "#067eaa";
@@ -154,6 +152,7 @@ function iterate(id) {
    selected = answer3.value;
 })
    
+   //Fourth answer button 
    answer4.addEventListener("click", function () {
       answer1.style.backgroundColor = "#067eaa";
       answer2.style.backgroundColor = "#067eaa";
@@ -162,8 +161,6 @@ function iterate(id) {
       selected = answer4.value;
    })
    
-   // Grabbing the evaluate button
-const evaluate = document.getElementsByClassName("evaluate");
 
 }
 
@@ -177,17 +174,19 @@ if (start) {
 
 
 var id = 0;
-
+//Next button click even
 next.addEventListener("click", function () {
    console.log("id -->" + id);
-   
-      start = false;
+
+   start = false;
+   //Defining colors for each answer button
       answer1.style.backgroundColor = "#067eaa";
       answer2.style.backgroundColor = "#067eaa";
       answer3.style.backgroundColor = "#067eaa";
       answer4.style.backgroundColor = "#067eaa";
       console.log("selected: " + selected)
       
+   //If the answer is correct and still on the array options, will increment the correct answer counter
       if (selected === "true" && id <= 3) {
          count = count + 10;   
       }
@@ -195,6 +194,7 @@ next.addEventListener("click", function () {
          //count++;
       }
    
+   //If its the last question, will save the count variable in the localStorage and will open a new window.
    if (id === 3) {
          
       if (localStorage.getItem("count") < count)
@@ -202,7 +202,9 @@ next.addEventListener("click", function () {
          localStorage.setItem("count", count); 
       }
          window.location.replace("./result.html");
-      }
+   }
+   
+   //Change the id to show the next question
       if (id < 3) {
          id++;
          iterate(id);

@@ -1,7 +1,7 @@
 * {
    box-sizing: border-box;
  }
- 
+ /*Defining the font for the App */
  body {
    font-family: Arial;
    margin: 0;
@@ -17,6 +17,7 @@
    border-radius: 15px; border: 2px solid #13293d;
  }
 
+ /*Customizing the start button*/
  #start-button {
   background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
   color: #13293d; 
@@ -33,25 +34,7 @@
   margin-top: 0.6em;
 }
 
-
-
-#evaluate {
-  background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
-  color: #13293d; 
-  cursor: pointer; 
-  font-size: 2em;
-  letter-spacing: 0.21px; 
-  line-height: 10px;max-width: 555px; 
-  padding: 20px 52px; 
-  text-align: center; 
-  transition-duration: 0.15s;
-  transition-property: 
-  background-color;
-  transition-timing-function: linear; 
-  margin-top: 0.6em;
-  align-items: center;
-}
-
+/*Customizing the Next button*/
 #next {
   background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
   color: #13293d; 
@@ -70,7 +53,8 @@
   align-items: center;
 }
 
-
+/*Customizing each button for the answers
+Some attributes are applied here in the css files and others in the js file*/
 #answer1{
   cursor: pointer;font-size: 1em; letter-spacing: 0.21px;line-height: 14px;color:white; padding: 10px; background:#067eaa; border-radius: 15px; border: 2px solid #13293d;text-align: center;transition-duration: 0.15s;transition-property: background-color;transition-timing-function: linear;margin-top: 0.6em; width: 800px;
 }
@@ -86,10 +70,7 @@
 #answer4{
   cursor: pointer;font-size: 1em; letter-spacing: 0.21px;line-height: 14px;color:white; padding: 10px; background:#067eaa; border-radius: 15px; border: 2px solid #13293d;text-align: center;transition-duration: 0.15s;transition-property: background-color;transition-timing-function: linear;margin-top: 0.6em; width: 800px;
 }
- /* 
- What happens when we set the display property to flex? 
- TODO: Write your answer here 
- */
+ 
  nav {
    display: flex;
    background-color: #d8a47f;
@@ -102,10 +83,7 @@
    text-align: center;
  }
  
- /* 
- What is the flex-wrap property? 
- TODO: Write your answer here 
- */
+ 
  main {
    display: flex;
    flex-wrap: wrap;
@@ -126,10 +104,7 @@
    color: #fff;
  }
  
- /* 
- What does the justify-content property do? 
- TODO: Write your answer here 
- */
+ 
  .products {
    flex: 4;
    background-color: #fff;
@@ -139,11 +114,7 @@
    justify-content: center;
  }
  
- /* 
- What is the flex property a shorthand property for?
- What is it doing here? 
- TODO: Write your answer here 
- */
+ 
  .card {
    border-style: solid;
    border-width: 1px;
@@ -202,11 +173,7 @@
 
 
 
- /* 
- What does the flex-direction property define?
- What is it doing here? 
- TODO: Write your answer here 
- */
+ /*Defining attributes when the screen get the minimum size*/
  @media screen and (max-width: 950px) {
    main,
    nav {

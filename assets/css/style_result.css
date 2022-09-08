@@ -41,10 +41,7 @@
 }
 
 
- /* 
- What happens when we set the display property to flex? 
- TODO: Write your answer here 
- */
+ 
  nav {
    display: flex;
    background-color: #d8a47f;
@@ -57,10 +54,7 @@
    text-align: center;
  }
  
- /* 
- What is the flex-wrap property? 
- TODO: Write your answer here 
- */
+ 
  main {
    display: flex;
    flex-wrap: wrap;
@@ -83,11 +77,7 @@
  
  
  
- /* 
- What is the flex property a shorthand property for?
- What is it doing here? 
- TODO: Write your answer here 
- */
+ 
  .card {
    border-style: solid;
    border-width: 1px;
@@ -146,11 +136,7 @@
 
 
 
- /* 
- What does the flex-direction property define?
- What is it doing here? 
- TODO: Write your answer here 
- */
+ /*Defining attributes when the screen get the minimum size*/
  @media screen and (max-width: 768px) {
    main,
    nav {
