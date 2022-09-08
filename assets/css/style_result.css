@@ -1,0 +1,160 @@
+* {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: Arial;
+   margin: 0;
+ }
+ 
+
+ 
+ header {
+   padding: 40px;
+   text-align: center;
+   background: #13293d;
+   color: #fff;
+   border-radius: 15px; border: 2px solid #13293d;
+ }
+
+ 
+#result{
+   color: white;
+   font-size: 60px;
+}
+
+#comeback {
+  background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
+  color: #13293d; 
+  cursor: pointer; 
+  font-size: 2em;
+  letter-spacing: 0.21px; 
+  line-height: 10px;max-width: 555px; 
+  padding: 20px 52px; 
+  text-align: center; 
+  transition-duration: 0.15s;
+  transition-property: 
+  background-color;
+  transition-timing-function: linear; 
+  margin-top: 0.6em;
+  align-items: center;
+}
+
+
+ /* 
+ What happens when we set the display property to flex? 
+ TODO: Write your answer here 
+ */
+ nav {
+   display: flex;
+   background-color: #d8a47f;
+ }
+ 
+ nav a {
+   color: #13293d;
+   padding: 14px 20px;
+   text-decoration: none;
+   text-align: center;
+ }
+ 
+ /* 
+ What is the flex-wrap property? 
+ TODO: Write your answer here 
+ */
+ main {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ aside {
+   flex: 1;
+   background-color: #b9c6ae;
+   padding: 80px;
+   text-align: center;
+ }
+ 
+ 
+ footer {
+   padding: 20px;
+   text-align: center;
+   background: #13293d;
+   color: #fff;
+ }
+ 
+ 
+ 
+ /* 
+ What is the flex property a shorthand property for?
+ What is it doing here? 
+ TODO: Write your answer here 
+ */
+ .card {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 10px;
+   padding: 10px;
+   flex: 0 0 800px;
+ }
+
+ .card-navigation {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  flex: 0 0 820px;
+  text-align: center;
+}
+
+.card-navigation button{
+  margin-bottom: 20px;
+}
+ 
+ .card header {
+   padding: 20px;
+ }
+ 
+ .card p {
+   text-align: center;
+ }
+ 
+ .card img {
+   width: 100%;
+ }
+ 
+ .score {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 10px;
+   padding: 10px;
+   flex: 0 0 400px;
+ }
+ 
+ .score header {
+   padding: 20px;
+ }
+ 
+ .score p {
+   text-align: center;
+ }
+ 
+ .score img {
+   width: 100%;
+ }
+ 
+
+
+
+
+ /* 
+ What does the flex-direction property define?
+ What is it doing here? 
+ TODO: Write your answer here 
+ */
+ @media screen and (max-width: 768px) {
+   main,
+   nav {
+     flex-direction: column;
+   }
+ }
+ 

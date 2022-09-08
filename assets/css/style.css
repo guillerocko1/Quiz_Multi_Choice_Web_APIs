@@ -1,0 +1,258 @@
+* {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: Arial;
+   margin: 0;
+ }
+ 
+
+ 
+ header {
+   padding: 40px;
+   text-align: center;
+   background: #13293d;
+   color: #fff;
+   border-radius: 15px; border: 2px solid #13293d;
+ }
+
+ #start-button {
+  background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
+  color: #13293d; 
+  cursor: pointer; 
+  font-size: 2em;
+  letter-spacing: 0.21px; 
+  line-height: 10px;max-width: 555px; 
+  padding: 20px 52px; 
+  text-align: center; 
+  transition-duration: 0.15s;
+  transition-property: 
+  background-color;
+  transition-timing-function: linear; 
+  margin-top: 0.6em;
+}
+
+
+
+#evaluate {
+  background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
+  color: #13293d; 
+  cursor: pointer; 
+  font-size: 2em;
+  letter-spacing: 0.21px; 
+  line-height: 10px;max-width: 555px; 
+  padding: 20px 52px; 
+  text-align: center; 
+  transition-duration: 0.15s;
+  transition-property: 
+  background-color;
+  transition-timing-function: linear; 
+  margin-top: 0.6em;
+  align-items: center;
+}
+
+#next {
+  background: linear-gradient(to bottom, #ff6600 6%, #ffffff 100%); 
+  color: #13293d; 
+  cursor: pointer; 
+  font-size: 2em;
+  letter-spacing: 0.21px; 
+  line-height: 10px; 
+  max-width: 555px; 
+  padding: 20px 52px; 
+  text-align: center; 
+  transition-duration: 0.15s;
+  transition-property: 
+  background-color;
+  transition-timing-function: linear; 
+  margin-top: 0.6em;
+  align-items: center;
+}
+
+
+#answer1{
+  cursor: pointer;font-size: 1em; letter-spacing: 0.21px;line-height: 14px;color:white; padding: 10px; background:#067eaa; border-radius: 15px; border: 2px solid #13293d;text-align: center;transition-duration: 0.15s;transition-property: background-color;transition-timing-function: linear;margin-top: 0.6em; width: 800px;
+}
+
+#answer2{
+  cursor: pointer;font-size: 1em; letter-spacing: 0.21px;line-height: 14px;color:white; padding: 10px; background:#067eaa; border-radius: 15px; border: 2px solid #13293d;text-align: center;transition-duration: 0.15s;transition-property: background-color;transition-timing-function: linear;margin-top: 0.6em; width: 800px;
+}
+
+#answer3{
+  cursor: pointer;font-size: 1em; letter-spacing: 0.21px;line-height: 14px;color:white; padding: 10px; background:#067eaa; border-radius: 15px; border: 2px solid #13293d;text-align: center;transition-duration: 0.15s;transition-property: background-color;transition-timing-function: linear;margin-top: 0.6em; width: 800px;
+}
+
+#answer4{
+  cursor: pointer;font-size: 1em; letter-spacing: 0.21px;line-height: 14px;color:white; padding: 10px; background:#067eaa; border-radius: 15px; border: 2px solid #13293d;text-align: center;transition-duration: 0.15s;transition-property: background-color;transition-timing-function: linear;margin-top: 0.6em; width: 800px;
+}
+ /* 
+ What happens when we set the display property to flex? 
+ TODO: Write your answer here 
+ */
+ nav {
+   display: flex;
+   background-color: #d8a47f;
+ }
+ 
+ nav a {
+   color: #13293d;
+   padding: 14px 20px;
+   text-decoration: none;
+   text-align: center;
+ }
+ 
+ /* 
+ What is the flex-wrap property? 
+ TODO: Write your answer here 
+ */
+ main {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ aside {
+   flex: 1;
+   background-color: #b9c6ae;
+   padding: 80px;
+   text-align: center;
+ }
+ 
+ 
+ footer {
+   padding: 20px;
+   text-align: center;
+   background: #13293d;
+   color: #fff;
+ }
+ 
+ /* 
+ What does the justify-content property do? 
+ TODO: Write your answer here 
+ */
+ .products {
+   flex: 4;
+   background-color: #fff;
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ 
+ /* 
+ What is the flex property a shorthand property for?
+ What is it doing here? 
+ TODO: Write your answer here 
+ */
+ .card {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 10px;
+   padding: 10px;
+   flex: 0 0 800px;
+ }
+
+ .card-navigation {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  flex: 0 0 820px;
+  text-align: center;
+}
+
+.card-navigation button{
+  margin-bottom: 20px;
+}
+ 
+ .card header {
+   padding: 20px;
+ }
+ 
+ .card p {
+   text-align: center;
+ }
+ 
+ .card img {
+   width: 100%;
+ }
+ 
+ .score {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 10px;
+   padding: 10px;
+   flex: 0 0 400px;
+ }
+ 
+ .score header {
+   padding: 20px;
+ }
+ 
+ .score p {
+   text-align: center;
+ }
+ 
+ .score img {
+   width: 100%;
+ }
+ 
+
+
+
+
+ /* 
+ What does the flex-direction property define?
+ What is it doing here? 
+ TODO: Write your answer here 
+ */
+ @media screen and (max-width: 950px) {
+   main,
+   nav {
+     flex-direction: column;
+     
+   }
+
+   #answer1{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   #answer2{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   #answer3{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   #answer4{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   header{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   .card-navigation{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   .products{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+   .card{
+    width: 470px;
+    margin-left: 90px;
+   }
+
+ }
+ 
