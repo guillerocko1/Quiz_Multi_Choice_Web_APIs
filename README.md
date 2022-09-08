@@ -4,3 +4,4 @@ In this Challenge we will build a timed coding quiz with multiple-choice questio
 
 Description.
 
+![main_window](https://your-copied-image-address)
