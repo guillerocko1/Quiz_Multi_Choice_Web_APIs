@@ -14,6 +14,10 @@ After the user has answered all the Questions, make a click in the Next Button i
 
 ![result_screen][(https://github.com/guillerocko1/Quiz_Multi_Choice_Web_APIs/blob/main/assets/images/result%20screen.png?raw=true)]
 
+The app uses Bootstrap modal window to show the expired time.
+
+![result_screen][(https://github.com/guillerocko1/Quiz_Multi_Choice_Web_APIs/blob/main/assets/images/result%20screen.png?raw=true)]
+
 To use the App again, make a click in the Start Again Button and the App will re-start the Quiz.
 
 Deployed Application link: https://guillerocko1.github.io/Quiz_Multi_Choice_Web_APIs/
