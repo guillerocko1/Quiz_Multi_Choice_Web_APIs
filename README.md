@@ -12,4 +12,4 @@ The image shows the main window of the App. The first time the aPP will start by
 
 After the user has answered all the Questions, make a click in the Next Button in order to open another page where the user will be able to see the Highest Score (See picture).
 
-![main_window][()]
+![result_screen][(https://github.com/guillerocko1/Quiz_Multi_Choice_Web_APIs/blob/main/assets/images/result%20screen.png?raw=true)]
