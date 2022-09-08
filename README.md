@@ -4,4 +4,4 @@ In this Challenge we will build a timed coding quiz with multiple-choice questio
 
 Description.
 
-![main_window](https://your-copied-image-address)
+![main_window]([[https://your-copied-image-address](https://github.com/guillerocko1/Quiz_Multi_Choice_Web_APIs/blob/main/assets/images/main%20window.png?raw=true)])
